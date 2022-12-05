@@ -13,4 +13,15 @@ describe("Async", () => {
       price: 200,
     });
   });
+  it("", async () => {
+    expect.assertions({
+      item: "Milk",
+      price: 200,
+    });
+    try {
+      await fetchData();
+    } catch (e) {
+      expect(e).toMatch();
+    }
+  });
 });
